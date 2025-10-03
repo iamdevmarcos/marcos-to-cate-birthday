@@ -989,6 +989,38 @@ audio {
 	animation: bannar_come linear 6s;
 	transform:translate(0px,0px);
 }
+
+.person-photo {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.person-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid #fff;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+	-webkit-transform:translate(0px,-500px);
+	-moz-transform:translate(0px,-500px);
+	-o-transform:translate(0px,-500px);
+	-ms-transform:translate(0px,-500px);
+	transform:translate(0px,-500px);
+}
+
+.person-image-come {
+	-webkit-animation: person_image_come linear 6s;
+	-webkit-transform:translate(0px,0px);
+	-moz-animation: person_image_come linear 6s;
+	-moz-transform:translate(0px,0px);
+	-o-animation: person_image_come linear 6s;
+	-o-transform:translate(0px,0px);
+	-ms-animation: person_image_come linear 6s;
+	-ms-transform:translate(0px,0px);
+	animation: person_image_come linear 6s;
+	transform:translate(0px,0px);
+}
 @-webkit-keyframes bannar_come {
 	0%{
 		-webkit-transform:translate(0px,-1000px);
@@ -1075,6 +1107,87 @@ audio {
 	}
 }
 
+@-webkit-keyframes person_image_come {
+	0%{
+		-webkit-transform:translate(0px,-1000px);
+	}
+	33%{
+		-webkit-transform:translate(0px,0px);
+		-webkit-transform:rotate(10deg);
+	}
+	66% {
+		-webkit-transform:translate(0px,100px);
+		-webkit-transform:rotate(-10deg);
+	}
+	100% {
+		-webkit-transform:translate(0px,0px);
+	}
+}
+@-moz-keyframes person_image_come {
+	0%{
+		-moz-transform:translate(0px,-1000px);
+	}
+	33%{
+		-moz-transform:translate(0px,0px);
+		-moz-transform:rotate(10deg);
+	}
+	66% {
+		-moz-transform:translate(0px,100px);
+		-moz-transform:rotate(-10deg);
+	}
+	100% {
+		-moz-transform:translate(0px,0px);
+	}
+}
+@-o-keyframes person_image_come {
+	0%{
+		-o-transform:translate(0px,-1000px);
+	}
+	33%{
+		-o-transform:translate(0px,0px);
+		-o-transform:rotate(10deg);
+	}
+	66% {
+		-o-transform:translate(0px,100px);
+		-o-transform:rotate(-10deg);
+	}
+	100% {
+		-o-transform:translate(0px,0px);
+	}
+}
+@-ms-keyframes person_image_come {
+	0%{
+		-ms-transform:translate(0px,-1000px);
+	}
+	33%{
+		-ms-transform:translate(0px,0px);
+		-ms-transform:rotate(10deg);
+	}
+	66% {
+		-ms-transform:translate(0px,100px);
+		-ms-transform:rotate(-10deg);
+	}
+	100% {
+		-ms-transform:translate(0px,0px);
+	}
+}
+@keyframes person_image_come {
+	0%{
+		transform:translate(0px,-1000px);
+	}
+	33%{
+		transform:translate(0px,0px);
+		transform:rotate(10deg);
+	}
+	66% {
+		transform:translate(0px,100px);
+		transform:rotate(-10deg);
+	}
+	100% {
+		transform:translate(0px,0px);
+	}
+}
+
 .balloons {
 	position: fixed;
 	bottom: -200px;
@@ -1113,6 +1226,12 @@ audio {
 }
 #b7,#b77{
 	background-image: url('b7.png');
+}
+#b8,#b88{
+	background-image: url('b1.png');
+}
+#b9,#b99{
+	background-image: url('b2.png');
 }
 .balloons-rotate-behaviour-one {
 	-webkit-animation: balloons_rotate_one linear 10s infinite;
@@ -1268,8 +1387,9 @@ audio {
 	margin-top: 50px;
 }
 .message {
-	margin-top: 200px;
+	margin-top: 100px;
 	display: none;
+	text-align: center;
 }
 .message p {
 	font-family: 'Signika', sans-serif;
