@@ -1,0 +1,135 @@
+/* ============================================== POSITION */
+
+.cake{
+  position:absolute;
+  display:none;
+  left:50%;
+  margin-left:-150px;
+  width:300px; height:300px;
+}
+
+/* ============================================== BASE */
+
+.cake:after{
+  background:rgba(255,255,255,1);
+  border-radius:300px;
+  content:"";
+  position:absolute;
+  bottom:0; left:0;
+  width:300px; height:6px;
+}
+
+.cake:before{
+  
+}
+
+/* ============================================== Candle */
+
+.velas{
+  background:rgba(255,255,255,1);
+  border-radius:100%;
+  position:absolute;
+  top:50%; left:50%;
+  margin-left:-7.5px;
+  margin-top:-25px;
+  width:15px; height:50px;
+}
+
+.fuego{
+  background:radial-gradient(50% 100%, #ff6b35, #f7931e);
+  border-radius:100% 100% 100% 100% / 100% 100% 60% 60%;
+  position:absolute;
+  top:50%; left:50%;
+  margin-left:-7.5px;
+  margin-top:-25px;
+  width:15px; height:50px;
+  display:none;
+}
+
+.fuego:after{
+  background:radial-gradient(50% 100%, #ff6b35, #f7931e);
+  border-radius:100% 100% 100% 100% / 100% 100% 60% 60%;
+  content:"";
+  position:absolute;
+  top:0; left:0;
+  width:15px; height:50px;
+}
+
+.fuego:before{
+  background:radial-gradient(50% 100%, #ff6b35, #f7931e);
+  border-radius:100% 100% 100% 100% / 100% 100% 60% 60%;
+  content:"";
+  position:absolute;
+  top:0; left:0;
+  width:15px; height:50px;
+}
+
+/* ============================================== Cake layers */
+
+.cobertura{
+  background:linear-gradient(45deg, #ff6b35, #f7931e);
+  border-radius:50%;
+  position:absolute;
+  top:50%; left:50%;
+  margin-left:-150px;
+  margin-top:-150px;
+  width:300px; height:300px;
+}
+
+.bizcocho{
+  background:linear-gradient(45deg, #8B4513, #A0522D);
+  border-radius:50%;
+  position:absolute;
+  top:50%; left:50%;
+  margin-left:-150px;
+  margin-top:-120px;
+  width:300px; height:240px;
+}
+
+/* ============================================== Cake decorations */
+
+.cobertura:after{
+  background:radial-gradient(circle, #ff6b35 30%, #f7931e 70%);
+  border-radius:50%;
+  content:"";
+  position:absolute;
+  top:50%; left:50%;
+  margin-left:-120px;
+  margin-top:-120px;
+  width:240px; height:240px;
+}
+
+.cobertura:before{
+  background:radial-gradient(circle, #ff6b35 30%, #f7931e 70%);
+  border-radius:50%;
+  content:"";
+  position:absolute;
+  top:50%; left:50%;
+  margin-left:-120px;
+  margin-top:-120px;
+  width:240px; height:240px;
+}
+
+/* ============================================== Cake base */
+
+.bizcocho:after{
+  background:linear-gradient(45deg, #8B4513, #A0522D);
+  border-radius:50%;
+  content:"";
+  position:absolute;
+  top:50%; left:50%;
+  margin-left:-120px;
+  margin-top:-90px;
+  width:240px; height:180px;
+}
+
+.bizcocho:before{
+  background:linear-gradient(45deg, #8B4513, #A0522D);
+  border-radius:50%;
+  content:"";
+  position:absolute;
+  top:50%; left:50%;
+  margin-left:-120px;
+  margin-top:-90px;
+  width:240px; height:180px;
+}
